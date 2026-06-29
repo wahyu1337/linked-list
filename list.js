@@ -38,7 +38,14 @@ export default class LinkedList{
         this.head = newNode;
     }
     
-    logs() {
-        console.dir(this.name);
+    // return the total number of node
+    size() {
+        let count = 0;
+        let current = this.head;
+        while (current !== null) {
+            count += 1
+            current = current.nextNode;
+        }
+        return count;
     }
 }

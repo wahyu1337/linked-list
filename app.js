@@ -12,3 +12,4 @@ list.append("hamster");
 list.prepend("snake");
 // list.append("turtle");
 console.dir(list, {depth: null});
+console.log(`total number of nodes: ${list.size()}`);
