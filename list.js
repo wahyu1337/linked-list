@@ -1,13 +1,6 @@
-// node class
-class Node {
-    // constructor
-    constructor(value = null) {
-        this.value = value;
-        this.nextNode = null;
-    }
-}
+import Node from "./node.js";
 
-class LinkedList{
+export default class LinkedList{
     constructor() {
         this.head = null;
     }
@@ -49,13 +42,3 @@ class LinkedList{
         console.dir(this.name);
     }
 }
-
-const list = new LinkedList();
-// console.log(list);
-list.append("dog");
-list.append("cat");
-list.append("parrot");
-list.append("hamster");
-list.prepend("snake");
-// list.append("turtle");
-console.dir(list, {depth: null});
